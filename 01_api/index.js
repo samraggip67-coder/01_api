@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Enable CORS for production (frontend client-side requests)
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || '*',
+  origin: '*',
   credentials: true,
   optionsSuccessStatus: 200
 };
